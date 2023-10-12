@@ -14,7 +14,3 @@ setTimeout(function()
 
 
 
-
-
-
-

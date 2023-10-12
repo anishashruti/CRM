@@ -1,8 +1,33 @@
 
+#bg{
+    background-size: 1800px 900px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    z-index: -1;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
 .form-layout{
 
     border-radius: 15px;
     width: 500px;
+
+}
+
+#bg::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  opacity: .4;
+  background-color: steelblue;
+  background-size: cover;
+  background-position: center;
+    background-blend-mode: multiply;
+  color: #fff;
 
 }
 
@@ -12,5 +37,15 @@
 
 }
 
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 37%;
+  padding: 25px;
+}
 
 
+#message-timer{
+display: inline-block;
+}
