@@ -25,9 +25,7 @@
         <!-- Create Navbar here -->
 
         {% include 'webapp/navbar.html' %}
-
-        <div class="container">
-
+        <div class="main-container">
             <br>
 
             <!-- Notification messages -->
@@ -37,7 +35,7 @@
                 {% if message.level == DEFAULT_MESSAGE_LEVELS.SUCCESS %}
 
 
-                    <p id="message-timer" class="alert alert-success float-center text-center message-text"> 
+                    <p id="message-timer" class="alert alert-success float-center text-center message-text">
 
                         <i class="fa fa-check" aria-hidden="true"></i> &nbsp; {{message}}
 
@@ -52,13 +50,10 @@
 
            {% block content %}
 
-
-
-
            {% endblock %}
 
-
         </div>
+
         <script src="{% static 'js/app.js' %}"></script>
 
 

@@ -1,26 +1,24 @@
-{% extends 'webapp/base.html' %}
 
+
+{% extends 'webapp/base.html' %}
+{% load static %}
 {% block content %}
     
     <body>
 
         <br>
         <br>
-
-        <div class="overlay text-center" >
-
-            <h2> Manging Your Data!! </h2>
-
+            <div class="title-text">
+                <h1> Manage <br> Your Data!! </h1>
             <br>
-
-            <h5> Keep track of your records effectively! </h5>
-
-            <hr>
+            <p> Keep track of your records effectively! </p>
             <br>
-
             <a class="btn btn-primary" type="button" href="{% url 'register' %}"> Create your account &nbsp; <i class="fa fa-user-plus" aria-hidden="true"></i> </a>
-
-        </div>
+            </div>
+            <div>
+                 <img src="{% static 'images/data.png' %}" class="side-img">
+            </div>
+<!--              content: '';-->
 
     </body>        
 

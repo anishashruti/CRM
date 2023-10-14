@@ -1,49 +1,71 @@
+*{
+ margin: 0;
+ padding:0;
+ box-sizing: border-box;
+ font-family: 'Poppins',san-serif;
 
+}
+.main-container{
+ width:100%;
+ min-height:100vh;
+ z-index: -1;
+ padding: 10px 10%;
+ overflow: hidden;
+ position: relative;
+ display: flex;
+ flex-direction: row;
+  justify-content: space-between;
+}
 #bg{
-    background-size: 1800px 900px;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    z-index: -1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   background-position: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
+
 }
 .form-layout{
-
     border-radius: 15px;
     width: 500px;
-
 }
 
 #bg::after {
-  content: '';
+
   position: absolute;
   inset: 0;
-  z-index: -1;
-  opacity: .4;
-  background-color: steelblue;
-  background-size: cover;
-  background-position: center;
-    background-blend-mode: multiply;
-  color: #fff;
-
-}
-
-.message-text{
-
-    color: white;
-
+  opacity: .6;
+  background-color: black;
+  background-blend-mode: multiply;
 }
 
 .container{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 37%;
-  padding: 25px;
+
 }
+
+.title-text{
+margin-top: 10%;
+max-width: 600px;
+}
+
+.title-text h1{
+font-size: 70px;
+color: white;
+
+}
+
+.title-text p{
+margin : 10 px 0 30px;
+color: white;
+}
+
+.side-img{
+bottom: 0;
+right; 10%;
+}
+
+.message-text{
+    color: white;
+}
+
 
 
 #message-timer{
